@@ -291,5 +291,9 @@ li span{
 .project-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    
+
+}
+
+.presonal-cv, .pet-management, .hobbies-store{
+    display: flex;
 }
