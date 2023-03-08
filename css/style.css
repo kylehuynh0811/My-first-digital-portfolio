@@ -115,21 +115,27 @@ li span{
     column-gap: 40px ;
     row-gap: 20px;
 }
+
 .jinfo-box-grid{
+    border: 1px solid gray;
+    padding: 24px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.06);
+}
+
+.jinfo-box-heading {
     display: grid;
     grid-template-columns: 75% 25%;
     column-gap: 20px;
     row-gap: 60px;
-    border: 1px solid gray;
-    padding: 24px;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.06);
+    align-items: center;
+    margin-bottom: 10px;
 }
 #job-info ul {
     list-style: none;
 }
 
 #job-info ul li{
-    margin-right: -50px;
+    margin:10px -30px 0 -20px;
 }
 
 #job-info ul li::before {
@@ -143,12 +149,18 @@ li span{
 
 .jinfo-title > h1{
     align-self: center;
-    margin-top: 10px;
+    margin-top: -5px;
 }
 
 .jinfo-icon{
     font-size: 32px;
     color: gray;
+}
+
+.jinfo-content{
+    font-size: 14px;
+    display: inline-block;
+    padding-right: 50px;
 }
 /* Exp box */
 .present{
@@ -157,18 +169,6 @@ li span{
     border-radius: 10px;
     padding: 5px;
     font-weight: 400;   
-}
-
-#exp{
-    margin-top: -40px;
-}
-/* Education box */
-#edu{
-    margin-top: -222px;
-}
-/* Activities box */
-#activities{
-    margin-top: -227px;
 }
 /* Hobbies formatting and its icon */
 .icon-hobbies{
@@ -221,5 +221,9 @@ li span{
     padding-left: 6px;
 }
 
+.text-hobbies {
+    font-size: 14px;
+    justify-content: space-between;
+}
 
 
