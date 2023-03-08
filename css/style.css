@@ -2,6 +2,7 @@
 * {
     margin: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .bg-grey {
@@ -12,6 +13,7 @@ body{
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
     color: black;
+    cursor:url('/meguminstaff.cur'),auto;
 }
 
 section > .container{
@@ -291,9 +293,78 @@ li span{
 .project-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-
+    column-gap: 40px;
 }
 
-.presonal-cv, .pet-management, .hobbies-store{
+.personal-cv, .pet-management, .hobbies-store{
     display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
+}
+
+.project-title{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid gray;
+}
+
+.project-content{
+    padding: 10px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+table{
+    border-collapse: collapse ;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+tr td:first-child{
+    width:100px;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+/* Footer formatting */
+#footer{
+    list-style: none;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#footer a:link, 
+a:visited{
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+#footer a:hover{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#footer li{
+    display: inline-block;
+}
+
+/* add the avatar and formatting it */
+.avt-default{
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background-color: #ffff;
+    border: 5px solid white;
+}
+
+.avt-banner{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%,45%);
 }
