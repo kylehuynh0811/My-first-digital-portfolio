@@ -40,6 +40,7 @@ Assignment 02 Stater
 │  ├─ banner.jpg
 │  ├─ default-avatar.webp
 │  ├─ funix-icon.png
+│  ├─ Kazdel-Thrift-Shop.png
 │  ├─ project_1.png
 │  ├─ project_2.png
 │  └─ project_3.png
