@@ -52,7 +52,8 @@ h1{
 /* Formatiting Navigation bar */
 #nav-bar{
     text-align: center;
-    margin: -80px 0 -30px 0;
+    margin: -580px 0 -30px 0;
+    padding-top: 50px;
 
 }
 #nav-bar a:link, a:visited{
@@ -69,7 +70,7 @@ h1{
     text-align: center;
     border-left: 1px solid gray;
     padding: 0 100px 32px 100px;
-} 
+}
 
 /* Personal info and Target formatting*/
 .about-grid{
@@ -313,11 +314,12 @@ li span{
     padding: 10px;
     border-left: 1px solid gray;
     border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
-table{
+/*table{
     border-collapse: collapse ;
-}
+}*/
 
 td{
     padding: 10px;
@@ -361,10 +363,10 @@ a:visited{
     border: 5px solid white;
 }
 
-.avt-banner{
+/*.avt-banner{
     display: inline-block;
     position: absolute;
     bottom: 0;
     right: 50%;
     transform: translate(50%,45%);
-}
+}*/
