@@ -52,9 +52,7 @@ h1{
 /* Formatiting Navigation bar */
 #nav-bar{
     text-align: center;
-    margin: -580px 0 -30px 0;
-    padding-top: 50px;
-
+    margin: -80px 0 -30px 0;
 }
 #nav-bar a:link, a:visited{
     text-decoration: none;
@@ -69,7 +67,7 @@ h1{
     display: inline-block;
     text-align: center;
     border-left: 1px solid gray;
-    padding: 500px 100px 32px 100px;
+    padding: 0px 100px 32px 100px;
 }
 
 /* Personal info and Target formatting*/
@@ -170,7 +168,7 @@ li span{
     background-color:#0079bc;
     color: #fff;
     border-radius: 10px;
-    padding: 5px;
+    padding: 3px 5px 3px 5px;
     font-weight: 400;   
 }
 /* Hobbies formatting and its icon */
@@ -363,10 +361,10 @@ a:visited{
     border: 5px solid white;
 }
 
-/*.avt-banner{
+.avt-banner{
     display: inline-block;
     position: absolute;
     bottom: 0;
     right: 50%;
-    transform: translate(50%,45%);
-}*/
+    transform: translate(50%,50%);
+}
