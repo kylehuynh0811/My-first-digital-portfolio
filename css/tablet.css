@@ -35,9 +35,9 @@ h1{
 }
 /* Putting text into the center of the image */
 .banner-img {
-  background-image: url(/images/banner.jpg);
+  position: relative;
   width: 100%;
-  height: 600px;
+  height: auto;
   background-size: cover;
   filter: brightness(40%);}   
 
@@ -349,19 +349,15 @@ a:visited{
   display: inline-block;
 }
 
-/* add the avatar and formatting it */
-.avt-default{
-  height: 240px;
-  width: 240px;
-  border-radius: 50%;
-  background-color: #ffff;
-  border: 5px solid white;
-}
-
+/* Hide the avatar */
 .avt-banner{
   display: none;
 }
-/* Hide the image and Name in the nav bar */
+
+/* Hide the text in the navigation bar */
+.nav-text{
+  display: none;
+}
 
 
 
