@@ -1,3 +1,4 @@
+@media screen and (min-width: 1025px){
 /* General Formatting */
 * {
     margin: 0px;
@@ -101,7 +102,6 @@ li span{
 }
 
 #target{
-    height: 547px;
     margin-top: 20px;
     padding: 40px 30px;
     background-color: #e7f2f8;
@@ -367,4 +367,5 @@ a:visited{
     bottom: 0;
     right: 50%;
     transform: translate(50%,50%);
+}
 }
