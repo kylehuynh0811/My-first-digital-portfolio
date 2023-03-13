@@ -5,7 +5,7 @@
 }
 
 /* Hide the text in the navigation bar */
-.nav-text{
+#nav-text{
   display: none;
 }
 /* Putting text into the center of the image */
@@ -31,5 +31,9 @@
   color: white;
 }
 
+#nav-bar{
+  display: block;
+  height: auto;
+}
  
 }
