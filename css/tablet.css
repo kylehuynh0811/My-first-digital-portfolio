@@ -20,7 +20,8 @@
   width: 100%;
   height: auto;
   background-size: cover;
-  filter: brightness(40%);}   
+  filter: brightness(40%);
+}   
 
 .banner-text {
   position: absolute;
@@ -33,6 +34,7 @@
 /* Formatiting Navigation bar */
 #nav-bar{
   text-align: center;
+  padding-bottom: 10px !important;
 }
 #nav-bar a:link, a:visited{
   text-decoration: none;

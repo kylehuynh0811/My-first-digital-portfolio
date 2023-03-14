@@ -31,9 +31,9 @@
   color: white;
 }
 
-#nav-bar{
+#nav-bar > .container a{
   display: block;
-  height: auto;
+  padding-bottom: 10px !important;
 }
  
 }

@@ -76,14 +76,10 @@ h1{
 }
 
 /* Personal info and Target formatting*/
-.about-grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-items: center;
-    align-items: center;
-    column-gap: 75px;    
-    line-height: 2; 
-    margin-top: 40px;
+#about > .container{
+    display: flex;
+    justify-items: space-between;
+    gap: 30px;
 }
 
 .social-icons{
@@ -95,23 +91,26 @@ li span{
 }
 
 #personal-info{
-    padding: 0px 200px 80px 30px;
-    background-color: #dff1fa;
+    padding: 0px 170px 80px 30px;
     font-size: 18px;
+    margin-top: 20px;
+    background-color: wheat;
     border-radius: 25px;
-    box-shadow:0 10px 20px 0 rgba(0,0,0,0.2);
-} 
-#personal-info h1{
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
+}
+
+#personal-info h1, #target h1{
     margin-top: 25px;
 }
 
 #target{
     margin-top: 20px;
-    padding: 40px 30px;
-    background-color: #e7f2f8;
-    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color:lightblue;
     border-radius: 25px;
-    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
+    font-size: 18px;
 }
 /* Job-related info*/
 .jinfo-grid{
