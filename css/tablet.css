@@ -1,4 +1,19 @@
 @media (min-width:768px) and (max-width: 1024px){
+/* CSS Reset */
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+  /* General formatting */
+h1{
+  font-size:1.3em;
+}
 /* Hide the avatar */
 .avt-banner{
   display: none;
@@ -25,8 +40,7 @@
 
 .banner-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  inset: 50% auto auto 50%;
   text-align: center;
   transform: translate(-50%,-50% );
   color: white;
@@ -44,6 +58,13 @@
   border-left: 1px solid gray;
   padding: 20px;
 }
-
+/* Formatting the Target and personal info box */
+#about .container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 10%;
+  align-items: center;
+  justify-items: center;
+}
 
 }

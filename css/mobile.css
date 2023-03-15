@@ -1,4 +1,15 @@
 @media screen and (max-width: 767px) {
+/* CSS Reset */
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 /* Hide the avatar */
 .avt-banner{
   display: none;
@@ -24,8 +35,7 @@
 
 .banner-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  inset: 50% auto auto 50%;
   text-align: center;
   transform: translate(-50%,-50% );
   color: white;
