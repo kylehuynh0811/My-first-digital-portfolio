@@ -45,5 +45,22 @@
   display: block;
   padding-bottom: 10px !important;
 }
- 
+/* Formatting Personal info and Target */ 
+#about .container{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  margin-top: 1.5em;
+  row-gap: 2em;
+  justify-items: center;
+}
+
+#target{
+  background-color: lightskyblue;
+  padding: 2em;
+}
+
+#personal-info{
+  background-color: lightskyblue;
+  padding: 2em;
+}
 }

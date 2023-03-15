@@ -11,8 +11,8 @@
   scroll-behavior: smooth;
 }
   /* General formatting */
-h1{
-  font-size:1.3em;
+h2{
+  font-size: 1.5em;
 }
 /* Hide the avatar */
 .avt-banner{
@@ -62,9 +62,18 @@ h1{
 #about .container{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  column-gap: 10%;
-  align-items: center;
+  margin-top: 1.5em;
+  column-gap: 2em;
   justify-items: center;
 }
 
+#target{
+  background-color: lightskyblue;
+  padding: 2em;
+}
+
+#personal-info{
+  background-color: lightskyblue;
+  padding: 2em;
+}
 }
