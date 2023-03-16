@@ -250,10 +250,6 @@ margin-left: -1em; /* Also needed for space (tweak if needed) */
   column-gap:0;
 }
 
-.cert-content{
-  text-align: center;
-}
-
 .cert-1-img, .cert-2-img, .cert-3-img{
   box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
 }
@@ -275,6 +271,74 @@ margin-left: -1em; /* Also needed for space (tweak if needed) */
 .cert-3{
   display: inline-block;
   padding-right: 0.5rem;
+}
+/* Formatting the project section */
+.project-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 0.5rem;
+}
+
+.personal-cv, .pet-management, .hobbies-store{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
+}
+
+.project-title{
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 0.85rem;
+  border: 1px solid gray;
+}
+
+.project-content{
+  font-size: 0.75rem;
+  padding: 1rem;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+table{
+  border-collapse: collapse ;
+  font-size: 0.75rem;
+}
+
+td{
+  padding: 1rem;
+}
+
+tr td:first-child{
+  width: 5rem;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+/* Footer formatting */
+#footer{
+  list-style: none;
+  line-height: 1.5;
+  text-align: center;
+  background-color: whitesmoke;
+  margin-top: 0.5rem;
+}
+
+#footer a:link, 
+a:visited{
+  margin-right: 50px;
+  text-decoration: none;
+}
+
+#footer ul{
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-bottom: 0.5rem;
+}
+
+#footer li{
+  display: inline-block;
+  font-size: 1.25rem;
 }
 
 }
