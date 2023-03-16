@@ -1,14 +1,28 @@
 @media (min-width:768px) and (max-width: 1024px){
 /* CSS Reset */
-*{
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
-  border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
   /* General formatting */
 h2{
@@ -50,6 +64,11 @@ h2{
   text-align: center;
   padding-bottom: 10px !important;
 }
+
+#nav-bar .container > a:nth-child(5){
+  border-right: 1px solid gray; 
+  margin-right: 10px; 
+}
 #nav-bar a:link, a:visited{
   text-decoration: none;
   color:#1d3557;
@@ -59,21 +78,203 @@ h2{
   padding: 20px;
 }
 /* Formatting the Target and personal info box */
+#about{
+  background-color: whitesmoke;
+}
+
 #about .container{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  margin-top: 1.5em;
-  column-gap: 2em;
+  margin-top: 1.5rem;
+  column-gap: 2rem;
   justify-items: center;
 }
 
 #target{
   background-color: lightskyblue;
-  padding: 2em;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin: 1rem 0;
 }
 
 #personal-info{
   background-color: lightskyblue;
-  padding: 2em;
+  border-radius: 2rem;
+  margin: 1rem 0;
+  padding: 2rem;
 }
+
+/* Job-related info*/
+.jinfo-grid{
+  display: grid !important;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 4rem ;
+  row-gap: 3rem;
+}
+
+.jinfo-box-grid{
+  border: 1px solid gray;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.06);
+}
+
+.jinfo-box-heading {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  column-gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#job-info ul {
+  list-style: none;
+}
+
+#job-info ul li::before {
+content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+color: #0079bc; /* Change the color */
+font-weight: bold; /* If you want it to be bold */
+display: inline-block; /* Needed to add space between the bullet and the text */
+width: 1em; /* Also needed for space (tweak if needed) */
+margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.jinfo-title > h1{
+  align-self: center;
+  margin-top: -5px;
+}
+
+.jinfo-icon{
+  font-size: 32px;
+  color: gray;
+}
+
+.jinfo-content{
+  font-size: 14px;
+  display: inline-block;
+  padding-right: 1rem;
+}
+/* Exp box */
+.present{
+  background-color:#0079bc;
+  color: #fff;
+  border-radius: 10px;
+  padding: 3px 5px 3px 5px;
+  font-weight: 400;   
+}
+/* Hobbies formatting and its icon */
+.icon-hobbies{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 44px 30px;
+  row-gap: 10px;
+  align-items: center;
+
+}
+
+.iconcircle1{
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #0079bc;
+  color: #0079bc;
+  padding-top: 6px;
+  padding-left: 4px;
+}
+.iconcircle2{
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #0079bc;
+  color: #0079bc;
+  padding-top: 7px;
+  padding-left: 10px;
+}
+.iconcircle3{
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #0079bc;
+  color: #0079bc;
+  padding-top: 7px;
+  padding-left: 9px;
+}
+.iconcircle4{
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #0079bc;
+  color: #0079bc;
+  padding-top: 6px;
+  padding-left: 6px;
+}
+
+.text-hobbies {
+  font-size: 14px;
+  justify-content: space-between;
+}
+/* The blue bar and the gray bar for skills and languages */
+.achieved{
+  background-color:#0079bc;
+  display: inline-block;
+  height: 2px;
+  width: 40px;
+}
+
+.none{
+  background-color:gray;
+  display: inline-block;
+  height: 2px;
+  width: 40px;
+}
+
+#eng, #deu, #jap{
+  margin-bottom: 2rem;
+}
+
+#hmtl-css, #js, #reactjs, #nodejs, #python{
+  margin-bottom: 1rem;
+}
+/* Formatting the Certificate section */
+#certificate{
+  background-color: whitesmoke;
+}
+.cert-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  row-gap: 1rem;
+  column-gap:0;
+}
+
+.cert-content{
+  text-align: center;
+}
+
+.cert-1-img, .cert-2-img, .cert-3-img{
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
+}
+
+.cert-1{
+  display: inline-block;
+  border-bottom: 1px solid #d6c08d;
+  border-right: 1px solid #d6c08d;
+  padding-right: 0.5rem;
+
+}
+
+.cert-2{ 
+  display: inline-block;
+  border-bottom: 1px solid #d6c08d;
+  padding-left: 0.5rem;
+}
+
+.cert-3{
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
 }
