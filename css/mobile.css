@@ -83,7 +83,6 @@
     padding: 2em 10em 10px 3em;
     font-size: 14px;
     background-color: #d9d9d9 ;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
   }
   
   #personal-info ul li a{
@@ -95,7 +94,6 @@
     padding: 2em 10em 10px 3em;
     height: 100%;
     background-color: #e6e6e6;
-    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
     font-size: 14px;
   }
   /* Job-related info*/
