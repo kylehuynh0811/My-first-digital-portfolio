@@ -19,14 +19,14 @@
   </head>
   <body>
     <!-- phần Banner -->
-    <div id="banner" style="padding:50px">
-      <img src="/images/banner.jpg" alt="banner image" class="banner-img"></img>
+    <div id="banner">
+      <img src="./images/banner.jpg" alt="banner image" class="banner-img"></img>
       <div class="banner-text">
         <div><h1>Huỳnh Phan Anh Kiệt</h1></div>
         <div>Full-stack Developer</div>
       </div>
       <div class="avt-banner">
-        <img src="/images/default-avatar.webp" alt="My avatar" class="avt-default">
+        <img src="./images/default-avatar.webp" alt="My avatar" class="avt-default">
       </div>
     </div>
     <!-- Navigation bar -->
@@ -57,7 +57,7 @@
         	</div>
         	<div id="personal-info">
           	<h2 class="section-title">Thông tin cá nhân</h2>
-          	<ul class="mt-40 info" style="list-style: none; padding: 0;">
+          	<ul class="mt-40 info" style="list-style: none;padding:0;">
             	<li><strong>Giới tính</strong> : Nam</li>
             	<li><strong>Ngày sinh</strong> : 08/11/2000</li>
             	<li><strong>Điện thoại</strong> : (+84) 364650159</li>
@@ -69,16 +69,16 @@
             	<li><strong>Website</strong> : <a href="https://kylehuynh0811.github.io">https://kylehuynh0811.github.io</a></li>
           	</u>
 						<div class="social-icons">
-							<a href="#"><i class="icon-twitter" style="color: #000"></i></a>
-							<a href="https://www.facebook.com/anhkiet.huynhphan.14/" target="_blank"><i class="icon-facebook" style="color: #000"></i></a>
-							<a href="#"><i class="icon-gplus" style="color: #000"></i></a>
-							<a href="https://www.linkedin.com/in/kylehuynh0811/" target="_blank"><i class="icon-linkedin" style="color: #000"></i></a>      	
+							<a href="#"><i class="icon-twitter" style="color: #0079bc"></i></a>
+							<a href="https://www.facebook.com/anhkiet.huynhphan.14/" target="_blank"><i class="icon-facebook" style="color: #0079bc"></i></a>
+							<a href="#"><i class="icon-gplus" style="color: #0079bc"></i></a>
+							<a href="https://www.linkedin.com/in/kylehuynh0811/" target="_blank"><i class="icon-linkedin" style="color: #0079bc"></i></a>      	
 						</div>
 					</div>
 			</div>
     </section>
 		<!-- Experience, Education and Activities-->
-    <section id="job-info">
+    <section id="job-info" class="pt-2 pb-3">
       <div class="container jinfo-grid">
         <div class="jinfo-box-grid" style="margin-top: 20px">
           <div class="jinfo-box-heading">
@@ -222,12 +222,12 @@
       </div>
     </section>
 		<!-- Cert section -->
-    <section id="certificate" class="bg-grey pt-2 mt-2">
+    <section id="certificate" class="bg-grey pt-2 pb-3 mt-2">
       <div class="container">
         <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
         <div class="cert-grid" style="padding-top:20px;">
           <div class="cert-1">
-            <img src="/images/Cert_WEB.png" alt="Web-dev-cert" class="cert-1-img">
+            <img src="./images/Cert_WEB.png" alt="Web-dev-cert" class="cert-1-img">
             <div class="cert-content" style="font-size: 14px;">          
               <p style="font-weight: bold; text-transform: uppercase;">Chứng chỉ lập trình web - FuNix</p>
               <div>
@@ -237,7 +237,7 @@
             </div>
           </div>
           <div class="cert-2">
-            <img src="/images/Cert_PRF.png" alt="Js-cert" class="cert-2-img">
+            <img src="./images/Cert_PRF.png" alt="Js-cert" class="cert-2-img">
             <div class="cert-content" style="font-size: 14px;">          
               <p style="font-weight: bold; text-transform: uppercase;">Chứng chỉ lập trình JavaScript- FuNix</p>
               <div>
@@ -247,7 +247,7 @@
             </div>
           </div>
           <div class="cert-3">
-            <img src="/images/Cert_DBI.png" alt="Database-cert" class="cert-3-img">
+            <img src="./images/Cert_DBI.png" alt="Database-cert" class="cert-3-img">
             <div class="cert-content" style="font-size: 14px;">          
               <p style="font-weight: bold; text-transform: uppercase;">Chứng chỉ lập trình Front-end React - FuNix</p>
               <div>
@@ -260,13 +260,15 @@
       </div>
     </section>
 		<!-- Participated or created projects -->
-    <section id="project" class="pt-2"> 
+    <section id="project" class="pt-2 pb-3"> 
       <div class="container">
         <h1 class="section-title">Dự án</h1>
         <div class="project-grid">
           <div class="personal-cv">
-            <img src="/images/project_1.png" alt="Personal portfolio" width="100%">
-            <div class="project-title">CV CÁ NHÂN <a href="cv-charter.html" class="btn btn-info text-light ms-5">Read more</a></div>
+            <img src="./images/project_1.png" alt="Personal portfolio" width="100%">
+            <div class="project-title">
+              CV CÁ NHÂN<br><a href="cv-charter.html" class="ms-2">Xem chi tiết</a>
+            </div>
             <div class="project-content">
               <span class="project-year present">2023</span>
               <span class="project-place"> <i class="icon-user-1"></i>&nbsp; FUNiX</span>
@@ -288,8 +290,8 @@
             </table>
           </div>
           <div class="pet-management">
-            <img src="/images/project_2.png" alt="Pet Management website" width="100%">
-            <div class="project-title">WEB QUẢN LÝ THÚ CƯNG</div>
+            <img src="./images/project_2.png" alt="Pet Management website" width="100%">
+            <div class="project-title">WEB QUẢN LÝ THÚ CƯNG<br><a href="#" class="ms-2">Xem chi tiết</a></div>
             <div class="project-content">
               <span class="project-year present">2023</span>
               <span class="project-place" ><i class="icon-user-1"></i>&nbsp; FUNiX</span>
@@ -310,12 +312,12 @@
             </table>
           </div>
           <div class="hobbies-store">
-            <img src="/images/Kazdel Thrift Shop.png" alt="Ecommerce website" width="100%">
-            <div class="project-title">WEB BÁN FIGURE VÀ MERCH</div>
+            <img src="./images/Kazdel Thrift Shop.png" alt="Ecommerce website" width="100%">
+            <div class="project-title">WEB BÁN HÀNG<br><a href="https://kazdel.com/" class="ms-2">Xem chi tiết</a></div>
             <div class="project-content">
               <span class="project-year present">2023</span>
-              <span class="project-place"><i class="icon-user-1"></i>Kazdel</span>
-              <span class="project-role"><i class="icon-lamp"></i>Developer</span>
+              <span class="project-place"><i class="icon-user-1"></i>&nbsp;Kazdel</span>
+              <span class="project-role"><i class="icon-lamp"></i>&nbsp;Developer</span>
             </div>
             <table>
               <tr>
@@ -336,7 +338,7 @@
       </div>
     </section>
     <!-- Social media icons in the footer -->
-    <section id="footer" class="bg-grey pt-4">
+    <section id="footer" class="bg-grey">
       <div class="container">
         <ul>
           <li><i class="icon-facebook-circled" color="#0079bc"></i> &nbsp; <a href="https://www.facebook.com/anhkiet.huynhphan.14/">Facebook</a></li>

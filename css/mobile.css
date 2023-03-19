@@ -1,330 +1,349 @@
 @media screen and (max-width: 767px) {
-/* CSS Reset */
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-  scroll-behavior: smooth;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-} 
-/* Hide the avatar */
-.avt-banner{
-  display: none;
-}
-
-/* Hide the text in the navigation bar */
-#nav-text{
-  display: none;
-}
-/* Putting text into the center of the image */
-#banner{
-    text-align: center;
+  /* CSS Reset */
+  html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+    scroll-behavior: smooth;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  } 
+  /* Hide the avatar */
+  .avt-banner{
+    display: none;
+  }
+  
+  /* Hide the text in the navigation bar */
+  #nav-text{
+    display: none;
+  }
+  /* Putting text into the center of the image */
+  #banner{
+      text-align: center;
+      position: relative;
+      color: white;
+      margin-bottom: 1em;
+  }
+  
+  .banner-img {
     position: relative;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    filter: brightness(40%);}   
+  
+  .banner-text {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    text-align: center;
+    transform: translate(-50%,-50% );
     color: white;
-}
-
-.banner-img {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background-size: cover;
-  filter: brightness(40%);}   
-
-.banner-text {
-  position: absolute;
-  inset: 50% auto auto 50%;
-  text-align: center;
-  transform: translate(-50%,-50% );
-  color: white;
-}
-
-#nav-bar > .container a{
-  display: block;
-  padding-bottom: 10px !important;
-  border: 0;
-}
-
-/* Formatting Personal info and Target */ 
-#about{
-  background-color: whitesmoke;
-}
-
-#about .container{
-  display: grid;
-  grid-template-rows: repeat(2,1fr);
-  margin-top: 1.5em;
-  row-gap: 2em;
-  justify-items: center;
-}
-
-#target{
-  background-color: lightskyblue;
-  padding: 2em;
-  border-radius: 2rem;
-  margin-top: 1rem;
-}
-
-#personal-info{
-  background-color: lightskyblue;
-  padding: 2em;
-  border-radius: 2rem;
-  margin-bottom: 1rem;
-}
-/* Job-related info*/
-.jinfo-grid{
-  display: grid !important;
-  grid-template-columns: 100%;
-  column-gap: 4rem;
-  row-gap: 3rem;
-}
-
-.jinfo-box-grid{
-  border: 1px solid gray;
-  padding: 1.5rem;
-  border-radius: 5px;
-  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.06);
-}
-
-.jinfo-box-heading {
-  display: grid;
-  grid-template-columns: 75% 25%;
-  column-gap: 1.5rem;
-  align-items: center;
-  margin-bottom: 10px;
-}
-#job-info ul {
-  list-style: none;
-}
-
-#job-info ul li::before {
-content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-color: #0079bc; /* Change the color */
-font-weight: bold; /* If you want it to be bold */
-display: inline-block; /* Needed to add space between the bullet and the text */
-width: 1em; /* Also needed for space (tweak if needed) */
-margin-left: -1em; /* Also needed for space (tweak if needed) */
-}
-
-.jinfo-title > h1{
-  align-self: center;
-  margin-top: -5px;
-}
-
-.jinfo-icon{
-  font-size: 32px;
-  color: gray;
-}
-
-.jinfo-content{
-  font-size: 14px;
-  display: inline-block;
-  padding-right: 1rem;
-}
-/* Exp box */
-.present{
-  background-color:#0079bc;
-  color: #fff;
-  border-radius: 10px;
-  padding: 3px 5px 3px 5px;
-  font-weight: 400;   
-}
-/* Hobbies formatting and its icon */
-.icon-hobbies{
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 44px 30px;
-  row-gap: 10px;
-  align-items: center;
-
-}
-
-.iconcircle1{
-  font-size: 16px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 2px solid #0079bc;
-  color: #0079bc;
-  padding-top: 6px;
-  padding-left: 4px;
-}
-.iconcircle2{
-  font-size: 16px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 2px solid #0079bc;
-  color: #0079bc;
-  padding-top: 7px;
-  padding-left: 10px;
-}
-.iconcircle3{
-  font-size: 16px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 2px solid #0079bc;
-  color: #0079bc;
-  padding-top: 7px;
-  padding-left: 9px;
-}
-.iconcircle4{
-  font-size: 16px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 2px solid #0079bc;
-  color: #0079bc;
-  padding-top: 6px;
-  padding-left: 6px;
-}
-
-.text-hobbies {
-  font-size: 14px;
-  justify-content: space-between;
-}
-/* The blue bar and the gray bar for skills and languages */
-.achieved{
-  background-color:#0079bc;
-  display: inline-block;
-  height: 2px;
-  width: 40px;
-}
-
-.none{
-  background-color:gray;
-  display: inline-block;
-  height: 2px;
-  width: 40px;
-}
-
-#eng, #deu, #jap{
-  margin-bottom: 2rem;
-}
-
-#hmtl-css, #js, #reactjs, #nodejs, #python{
-  margin-bottom: 1rem;
-}
-/* Formatting the Certificate section */
-#certificate{
-  background-color: whitesmoke;
-}
-.cert-grid{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  row-gap: 1rem;
-  column-gap:0;
-}
-
-.cert-1-img, .cert-2-img, .cert-3-img{
-  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
-}
-
-.cert-1{
-  display: inline-block;
-  border-bottom: 1px solid #d6c08d;
-  padding-right: 0.5rem;
-
-}
-
-.cert-2{ 
-  display: inline-block;
-  border-bottom: 1px solid #d6c08d;
-  padding-left: 0.5rem;
-}
-
-.cert-3{
-  display: inline-block;
-  padding-right: 0.5rem;
-}
-/* Formatting the project section */
-.project-grid{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  row-gap: 1rem ;
-}
-
-.personal-cv, .pet-management, .hobbies-store{
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
-}
-
-.project-title{
-  padding: 1rem;
-  font-weight: bold;
-  font-size: 0.85rem;
-  border: 1px solid gray;
-}
-
-.project-content{
-  font-size: 0.75rem;
-  padding: 1rem;
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
-  border-bottom: 1px solid gray;
-}
-
-.project-place, .project-role{
-  display: block;
-}
-
-
-table{
-  border-collapse: collapse ;
-  font-size: 0.75rem;
-}
-
-td{
-  padding: 1rem;
-}
-
-tr td:first-child{
-  width: 5rem;
-  vertical-align: top;
-  font-weight: bold;
-}
-/* Footer formatting */
-#footer{
-  list-style: none;
-  line-height: 1.5;
-  text-align: center;
-  margin-top: 0.5rem;
-  background-color: whitesmoke;
-}
-
-#footer a:link, 
-a:visited{
-  margin-right: 50px;
-  text-decoration: none;
-}
-
-#footer ul{
-  margin-bottom: 0;
-  padding-left: 0;
-  padding-bottom: 0.5rem;
-}
-
-#footer li{
-  display: inline-block;
-  font-size: 1.25rem;
-}
-
-}
+  }
+  
+  #nav-bar a{
+    display: block;
+    padding-bottom: 1rem !important;
+    border: 0;
+    text-decoration: none;
+  }
+  
+  /* Formatting Personal info and Target */ 
+  #about > .container{
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-icons{
+    margin-top: 30px;
+  }
+  
+  li span{
+    font-weight: bold;
+  }
+  
+  #personal-info{
+    padding: 2em 10em 10px 3em;
+    font-size: 14px;
+    background-color: #d9d9d9 ;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
+  }
+  
+  #personal-info ul li a{
+    text-decoration: none;
+    color: #000;
+  }
+  
+  #target{
+    padding: 2em 10em 10px 3em;
+    height: 100%;
+    background-color: #e6e6e6;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
+    font-size: 14px;
+  }
+  /* Job-related info*/
+  .jinfo-grid{
+    display: grid !important;
+    grid-template-columns: 100%;
+    column-gap: 4rem;
+    row-gap: 3rem;
+  }
+  
+  .jinfo-box-grid{
+    border: 1px solid gray;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.06);
+  }
+  
+  .jinfo-box-heading {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    column-gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  #job-info ul {
+    list-style: none;
+  }
+  
+  #job-info ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #0079bc; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+  
+  .jinfo-title > h1{
+    align-self: center;
+    margin-top: -5px;
+  }
+  
+  .jinfo-icon{
+    font-size: 32px;
+    color: gray;
+  }
+  
+  .jinfo-content{
+    font-size: 14px;
+    display: inline-block;
+    padding-right: 1rem;
+  }
+  /* Exp box */
+  .present{
+    background-color:#0079bc;
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px 5px 3px 5px;
+    font-weight: 400;   
+  }
+  /* Hobbies formatting and its icon */
+  .icon-hobbies{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 44px 30px;
+    row-gap: 10px;
+    align-items: center;
+  
+  }
+  
+  .iconcircle1{
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #0079bc;
+    color: #0079bc;
+    padding-top: 6px;
+    padding-left: 4px;
+  }
+  .iconcircle2{
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #0079bc;
+    color: #0079bc;
+    padding-top: 7px;
+    padding-left: 10px;
+  }
+  .iconcircle3{
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #0079bc;
+    color: #0079bc;
+    padding-top: 7px;
+    padding-left: 9px;
+  }
+  .iconcircle4{
+    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid #0079bc;
+    color: #0079bc;
+    padding-top: 6px;
+    padding-left: 6px;
+  }
+  
+  .text-hobbies {
+    font-size: 14px;
+    justify-content: space-between;
+  }
+  /* The blue bar and the gray bar for skills and languages */
+  .achieved{
+    background-color:#0079bc;
+    display: inline-block;
+    height: 2px;
+    width: 40px;
+  }
+  
+  .none{
+    background-color:gray;
+    display: inline-block;
+    height: 2px;
+    width: 40px;
+  }
+  
+  #eng, #deu, #jap{
+    margin-bottom: 2rem;
+  }
+  
+  #hmtl-css, #js, #reactjs, #nodejs, #python{
+    margin-bottom: 1rem;
+  }
+  /* Formatting the Certificate section */
+  #certificate{
+    background-color: whitesmoke;
+  }
+  .cert-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 1rem;
+    column-gap:0;
+  }
+  
+  .cert-1-img, .cert-2-img, .cert-3-img{
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
+  }
+  
+  .cert-1{
+    display: inline-block;
+    border-bottom: 1px solid #d6c08d;
+    padding-right: 0.5rem;
+  
+  }
+  
+  .cert-2{ 
+    display: inline-block;
+    border-bottom: 1px solid #d6c08d;
+    padding-left: 0.5rem;
+  }
+  
+  .cert-3{
+    display: inline-block;
+    padding-right: 0.5rem;
+  }
+  /* Formatting the project section */
+  .project-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 1rem ;
+  }
+  
+  .personal-cv, .pet-management, .hobbies-store{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.05);
+    border: 1px solid gray;
+  }
+  
+  .project-title{
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 0.85rem;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+  }
+  
+  .project-content{
+    font-size: 0.95rem;
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+  }
+  
+  .project-place, .project-role{
+    display: block;
+  }
+  
+  
+  table{
+    border-collapse: collapse ;
+    font-size: 0.95rem;
+  }
+  
+  table tr:first-child{
+    border-bottom: 1px solid gray;
+  }
+  
+  table tr:nth-child(2){
+    border-bottom: 1px solid gray;
+  }
+  
+  td{
+    padding: 1rem;
+  }
+  
+  tr td:first-child{
+    width: 5rem;
+    vertical-align: top;
+    font-weight: bold;
+  }
+  /* Footer formatting */
+  #footer{
+    list-style: none;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 0.5rem;
+    background-color: whitesmoke;
+  }
+  
+  #footer a:link, 
+  a:visited{
+    margin-right: 50px;
+    text-decoration: none;
+  }
+  
+  #footer ul{
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-bottom: 0.5rem;
+  }
+  
+  #footer li{
+    display: inline-block;
+    font-size: 1.25rem;
+  }
+  
+  }
