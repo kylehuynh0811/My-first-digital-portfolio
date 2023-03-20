@@ -288,7 +288,7 @@
   .project-content{
     font-size: 0.95rem;
     padding: 1rem;
-    border-bottom: 1px solid gray;
+    border-bottom: 2px solid gray;
   }
   
   .project-place, .project-role{
