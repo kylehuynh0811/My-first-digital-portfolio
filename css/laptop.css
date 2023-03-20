@@ -117,7 +117,7 @@
     }
     
     #personal-info{
-        padding: 0px 10em 80px 3em;
+        padding: 0px 10em 80px 4.5em;
         font-size: 18px;
         background-color: #d9d9d9 ;
     }
@@ -392,6 +392,7 @@
     
     #footer li i{
         color: #0079bc;
+        font-size:160%;
     }
     
     /* add the avatar and formatting it */
