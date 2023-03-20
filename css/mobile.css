@@ -111,6 +111,11 @@
     box-shadow: 0 10px 20px 0 rgba(0,0,0,0.06);
   }
   
+  .jinfo-box-grid #skill, .jinfo-box-grid #lang{
+    height: 80%;
+    display: grid;
+    grid-template-rows: repeat(5,1fr) ;
+  }
   .jinfo-box-heading {
     display: grid;
     grid-template-columns: 75% 25%;
@@ -349,9 +354,11 @@
     margin-right: 1.5rem;
   }
 
-  #footer li i{
+  #footer li a > i{
     color: #0079bc;
-    font-size: 160%;
-}
-  
+    font-size: 300%;
+  }
+  #footer .footer-link-text{
+    display:none;
+  }
   }
